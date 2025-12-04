@@ -28,14 +28,14 @@ section {
 }
 
 .page-wrapper {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .container {
-    margin: 0 auto;
     max-width: 80rem;
+    margin: 0 auto;
     padding: 0 3rem;
 }
 
@@ -66,15 +66,15 @@ header a {
 } */
 
 .hero {
-    margin: 0;
     padding-bottom: 3rem;
+    margin: 0;
 }
 
 .hero-content {
-    align-items: center;
     display: grid;
-    gap: 3rem;
+    align-items: center;
     grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+    gap: 3rem;
 }
 
 /* Hero Intro */
@@ -98,10 +98,10 @@ header a {
 }
 
 .hero-intro-links a {
+    text-decoration: none;
     border: 1px solid rgb(95, 95, 95);
     border-radius: 30px;
-    padding: 10px;    
-    text-decoration: none;
+    padding: 10px;
 
     &:first-child {
         color: var(--text-primary);
@@ -114,16 +114,16 @@ header a {
 
 /* Hero Card */
 .hero-card {
+    padding: 20px;
     background: radial-gradient(circle at top left, #1f2933, #161b22 50%);
     border: 1px solid rgb(95, 95, 95);
     border-radius: 15px;
     box-shadow: var(--box-shadow);
-    padding: 20px;
 }
 
 .hero-card-tag {
-    color: var(--text-secondary);
     font-size: 0.75rem;
+    color: var(--text-secondary);
 }
 
 .hero-card-title {
@@ -131,8 +131,8 @@ header a {
 }
 
 .hero-card-content {
-    color: var(--text-secondary);
     font-size: 0.95rem;
+    color: var(--text-secondary);
 }
 
 .hero-card-tags {
@@ -143,16 +143,26 @@ header a {
 
 .hero-card-tags span,
 .tags span {
+    display: inline-flex;
     border: 1px solid rgb(95, 95, 95);
     border-radius: 15px;
-    display: inline-flex;
-    font-size: 0.75rem;
-    flex-direction: c;
     padding: 5px 10px;
+    font-size: 0.75rem;
 }
 
 .tag {
     display: inline-flex;
+}
+
+.github {
+    text-decoration: none;
+    color: var(--text-primary);
+    background-color: var(--accent);
+    display: inline-flex;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.75rem;
 }
 
 .projects-button {
@@ -161,11 +171,15 @@ header a {
 
 /* Skills & Projects Cards */
 .card {
+    padding: 5px 20px;
     background-color: var(--bg-secondary);
     border: 1px solid rgb(95, 95, 95);
     border-radius: 15px;
     box-shadow: var(--box-shadow);
-    padding: 5px 20px;
+}
+
+.card p {
+    color: var(--text-secondary);
 }
 
 .card h3 {
@@ -174,15 +188,15 @@ header a {
 }
 
 .card ul {
-    color: var(--text-secondary);
     font-size: 0.95rem;
+    color: var(--text-secondary);
 }
 
 .skills-cards, 
 .projects-cards {
     display: grid;
-    gap: 1.2rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
 }
 
 .projects-cards .card:hover {
@@ -204,19 +218,19 @@ header a {
 }
 
 .contact-details span {
-    color: var(--text-secondary);
     text-transform: uppercase;
+    color: var(--text-secondary);
 }
 
 .contact-details a {
-    color: var(--text-primary);
     text-decoration: none;
+    color: var(--text-primary);
 }
 
 /* Footer */
 footer {
-    background: #05070a;
     border-top: 1px solid var(--text-secondary);
+    background: #05070a;
     color: var(--text-secondary);
 }
 
@@ -229,8 +243,8 @@ footer {
 
 @media (max-width: 1024px) {
     .hero-content {
-        gap: 2rem;
         grid-template-columns: 1fr;
+        gap: 2rem;
         text-align: center;
     }
 
@@ -239,8 +253,8 @@ footer {
     }
 
     .hero-card {
-        margin: 0 auto;
         max-width: 25rem;
+        margin: 0 auto;
     }
 
     .skills-cards,
@@ -285,8 +299,8 @@ footer {
     }
 
     .hero-intro-links a {
-        font-size: 0.85rem;
         padding: 8px 14px;
+        font-size: 0.85rem;
     }
 
     .skills-cards,
@@ -302,4 +316,3 @@ footer {
         padding: 15px;
     }
 }
-
