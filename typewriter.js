@@ -1,10 +1,10 @@
 // typewriter
 const phrases = [
-    'building for the web.',
-    'experimenting with code.',
-    'learning something new today.',
-    'open to internship opportunities.',
-    'passionate about frontend & beyond.'
+    'building REST APIs in .NET.',
+    'crafting front-ends in Angular.',
+    'making Android apps in Kotlin.',
+    'interning at Contraste.',
+    'working towards a junior developer role.'
 ];
 
 let pi = 0, ci = 0, deleting = false;
